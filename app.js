@@ -53,7 +53,7 @@ app.get("/players/", async (request, response) => {
     )
   );
 });
-rr;
+
 // GET API2
 
 app.post("/players/", async (request, response) => {
@@ -70,7 +70,7 @@ app.post("/players/", async (request, response) => {
     )`;
 
   const dbResponse = await db.run(addPlayersQuery);
-  const playerId = dbResponse.lastId;
+  // const playerId = dbResponse.lastId;
   response.send("Player Added to Team");
 });
 // GET API3
