@@ -7,9 +7,9 @@ Content-Type: application/json
 
 
 {
-    "playerName" : "Lakshman",
-    "jerseyNumber" : 5,
-    "role" : "All-rounder"
+  "playerName": "Vishal",
+  "jerseyNumber": 17,
+  "role": "Bowler"
 }
 
 ###
@@ -18,6 +18,14 @@ GET  http://localhost:3000/players/2
 ###
 
 PUT http://localhost:3000/players/1/
+Content-Type: application/json 
+
+
+{
+  "playerName": "Maneesh",
+  "jerseyNumber": 54,
+  "role": "All-rounder"
+}
 
 ###
 DELETE http://localhost:3000/players/2/
